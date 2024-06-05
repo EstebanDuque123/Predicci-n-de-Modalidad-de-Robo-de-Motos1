@@ -43,16 +43,3 @@ async def predecir_modalidad(datos_entrada: DatosEntrada):
 
     # Retornamos la predicción
     return {"Modalidad_Predicha": modalidad_predicha}
-
-print("Se abrio la api")
-
-# Para ejecutar la aplicación
-if __name__ == "__main__":
-    import uvicorn
-    import nest_asyncio
-    import asyncio
-
-    nest_asyncio.apply()
-    config = uvicorn.Config(app, host="127.0.0.1", port=8001, log_level="info")
-    server = uvicorn.Server(config)
-    asyncio.run(server.serve())
