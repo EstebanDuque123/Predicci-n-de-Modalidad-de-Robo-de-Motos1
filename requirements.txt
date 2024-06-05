@@ -1,2 +1,5 @@
-streamlit
-requests
+fastapi
+uvicorn
+joblib
+pandas
+nest_asyncio
