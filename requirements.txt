@@ -2,4 +2,4 @@ fastapi
 uvicorn
 joblib
 pandas
-nest_asyncio
+scikit-learn
